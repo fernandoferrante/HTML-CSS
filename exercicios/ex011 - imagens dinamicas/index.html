@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+
+    <!--A ideia é inserir primeiro a imagem grande e depois ir inserindo acima as imagens menores, respeitando a ordem de tamanho (do menor para o maior), como no ex acima-->
+
+    <h1>Reproduzindo audios</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+
+    <audio src="midia/Burlesque Heartache-RKVC.mp3" controls></audio>
+    <!--Pode-se adicionar após o comando controls o comando autoplay para reproduzir automaticamente ao iniciar a pagina e loop para reiniciar após o termino do audio-->
+    <!--compativel com os formatos mp3 wav e ogg-->
+
+   <p>Se nao conseguiu reproduzir é pq seu navegador não é compativel... <a href="midia/Burlesque Heartache-RKVC.mp3">clique aqui para baixar</a></p>
+
+   <p></p>
+   <audio preload="metadata" controls>
+       <source src="midia/Twin Engines - Jeremy Korpas.mp3" type="audio/mpeg">
+   </audio>
+   <p>Se nao conseguiu reproduzir é pq seu navegador não é compativel... <a href="midia/Twin Engines - Jeremy Korpas.mp3">clique aqui para baixar</a></p>
+    
+</body>
+</html>

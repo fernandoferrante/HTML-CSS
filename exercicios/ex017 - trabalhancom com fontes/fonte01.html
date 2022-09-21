@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family:work-sams;
+            font-size: 16px;
+
+            /*
+            Medidas absolutas = cm, mm, in, px, pt, pc (usar px) - padrão = 16px
+
+            Medidas relativas = em , ex, rem, vw, vh, % (usar em) - padrão = 1em que corresponde a 16px
+            */
+        }
+        h1 {
+            /* shorthand font (significa dar todas as propriedades para a fonte em um unico comando, respeitando a sequencia. 
+            Ex
+            - font style -> font weight -> font size -> font-family)
+            
+            font style = normal, italic, oblique
+            font weight = normal, bold
+            font size = tamanho em px ou em
+            font family = nome da fonte*/
+        
+        font: italic bold 2em 'verdana';
+        }
+        h2 {
+            font: normal bold 1em 'courier';
+        }
+        p {
+            font: normal normal 1em 'arial';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut excepturi tempora sequi corrupti libero omnis, reiciendis a laborum aperiam cupiditate deleniti voluptatum exercitationem dolor minima nam. Expedita ipsam atque explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ducimus officia, consectetur aperiam animi tempore reiciendis tempora eaque deleniti libero unde fugit! Iusto unde, fugit tempora sapiente quasi numquam illum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis perferendis nemo, fuga consequuntur esse error et blanditiis, dolore earum voluptatem ea, mollitia enim recusandae? Ipsa fugiat numquam enim rerum porro.</p>
+
+    <h2>Subtitulo do exercicio</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque autem magni quibusdam vero nisi impedit tempore fugit dignissimos, culpa repellat beatae incidunt placeat harum ipsum eos molestiae ipsa facere exercitationem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta maxime iste magni, harum enim possimus voluptatibus rem laudantium distinctio ipsa, deleniti accusantium dolorum reiciendis, quo perspiciatis inventore vel quisquam delectus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quos, tempore ipsum placeat dolorem praesentium facilis voluptate explicabo sed facere ullam vero, autem architecto nobis dolorum error nisi, saepe quaerat!</p>
+    
+</body>
+</html>

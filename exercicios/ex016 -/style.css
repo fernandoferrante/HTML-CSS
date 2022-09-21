@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    /*height: 100%;*/
+}
+
+body {
+    background-image: linear-gradient(to right, #F2DBAE,#CDB7B1 );
+}
+main {
+    background-color: white; /*define a cor de fundo*/
+    border-radius: 10px; /*arrednda as quinas da caixa de texto*/
+    box-shadow: 5px 5px 10px #6a4834a9; /* = cria sombra - 1 parametro, quanto espalha pro lado, 2 parametro, quanto espalha para baixo, 3 parameto quanto vai espalhar para fora e o 4 parametro é a cor da sombra*/
+    width: 700px; /*define a largura da caixa de texto*/
+    padding: 10px; /* cria um espaçamento entre o texto e o limite da caixa de texto.. ex.. qto mais, mais distancia do texto*/
+    margin: auto; /*cria a orientação da caixa de text.. o caso fi definido ao centro*/
+}
+
+h1 {
+    color: #F2A477;
+    text-align: center;
+    text-shadow: 1px 1px 2px #6a4834;
+}
+
+h2 {
+    color: #65768C;
+}
+
+p {
+    text-align: justify;
+}

@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+body{background:rgb(223, 242, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Courier, monospace; 
+    font-size: 14px;}
+h1{color: rgb(21, 0, 255);
+    background-color: rgb(188, 194, 255);}
+h2{color: rgb(173, 75, 248);}
+p{text-align: justify;}

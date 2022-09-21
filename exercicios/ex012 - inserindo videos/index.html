@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este video esta hospedado no meu proprio servidor</p>
+
+    <video src="midia/pipas.mp4" width="560" controls></video>
+    <!--forma mais comun de inserir video.. porem alguns navegadores podem nao abrir o video.. dessa forma sugere-se inserir todos os formatos para nao correr o risco de nao abrir em determinados navegadores-->
+
+    <p>video inseridos em varios formatos</p>
+    <video width="560" poster="imagens/tumb.jpg" controls>
+        <source src="midia/pipas.mp4" type="video/mp4">
+        <source src="midia/Pipas-web.m4v" type="video/m4v">
+        <source src="midia/pipas-full.mp4" type="video/mp4">
+    </video>
+    <!--o comando poster é para criar uma tumb do video caso na atualização da pagina o video fique preto ou parado em qqer parte dele-->
+    <!--pode inserir o comando autoplay para iniciar automaticamente e o comando loop para reiniciar automaticamnte quando finalizar a reprodução-->
+    <p>se o navegador nao abrir,<a href="midia/pipas.mp4"> clique aqui para baixar</a></p>
+
+    <p>Precisa se atentar ao tamanho do video que será postado pois dependendo da qtde de acessos diarios, irá consumir muito trafego de dados.</p>
+
+    <h1>Inserindo videos do yutube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/eM5wsMmOhPc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Inserindo videos do vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/295148994?h=23ad857e0f&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    
+</body>
+</html>
