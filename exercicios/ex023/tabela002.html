@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th {
             border: 1px solid black;
@@ -26,6 +27,12 @@
         thead, tfoot {
             background-color: rgb(0, 0, 0);
             color: white;
+        }
+        thead > tr > th { /* essa linha de cmando faz com que o cabeçalho da tabela fique fixo no topo ao rlar a pagina*/
+            position: sticky;
+            top: 0;
+            background-color: rgb(0, 0, 0);
+
         }
 
         tbody > tr:nth-child(2n-1) { /* intercala as cores das linhas da tabela de acordo com o valor sugerido.. ex de 2 em 2 linhas ou assim por diante.. é so alterar o valor de (n).. nesse caso ele nao pinta a primeira linha.. para começar pintando a primeira linha, deve-se colocar o valor (2n-1)
@@ -118,6 +125,7 @@
 
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo et animi ratione necessitatibus quas neque rem totam tempore minus perferendis voluptas perspiciatis sed quod hic, consequuntur voluptatem tempora suscipit enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus accusamus cumque magnam fugiat sit itaque iste! Officiis, sapiente ad? Consequatur voluptates laboriosam laborum qui architecto doloribus neque, atque sit ratione? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus cum, numquam, alias quos dignissimos, ipsa officiis sit aliquid error velit hic voluptates reiciendis reprehenderit nihil fuga deleniti quia rem. Veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi fugit eos labore pariatur, qui consequatur tempore earum at consequuntur veniam harum ullam in necessitatibus maxime incidunt doloribus expedita, reprehenderit dolor! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque placeat aspernatur eligendi inventore veritatis cum quis, totam, laborum deleniti magnam tempore dolore, nobis sint perferendis vero distinctio? Aut, nemo aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis doloremque hic tempore, reiciendis, alias harum vel impedit, cumque temporibus saepe nihil. Adipisci velit placeat, quae aut autem eum voluptas itaque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum fugit suscipit necessitatibus nobis ratione obcaecati labore ullam in corrupti, repudiandae dignissimos mollitia sunt nulla facere dolor, eligendi ad eum quam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem magni, sed a, facilis at tempore veritatis aut error cumque minima ullam modi, placeat maxime? Nisi dicta a commodi eaque officia. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium laborum labore fugit ducimus. Quas earum rerum, quasi iure accusantium facere quae quo laborum repudiandae! Itaque rem quia minus porro corporis?</p>
     
 </body>
 </html>
