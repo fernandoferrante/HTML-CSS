@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+
+   <form action="cadastro.php" method="post"
+        autocomplete="off"> <!--o comando label é para tirar a caixa suspensa que abre quando esta digitando no formulario
+        
+        o comando method é para oocultar na linha do navegador os valores enviados.. tem a opção padrao GET e a opção POST (essa oculta os valores na linha de endereço do navegador.. porem ainda da pra descrobrir se vasculhar no modo inspecionar do navegador
+        
+        get = dados nao sensiveis = nomes, idades, altura, textos sem privacidade
+        
+        post = para dados sensiveis = senhas, dados bancarios, dados de cartões de credito.. se nao quiser que os dados nao apareçam na url... dados acima de 3000 bites ou 3000 letras)-->
+    <p><label for="inome">Nome:</label> 
+        <input type="text" name="nome" id="inome"></p>
+
+    <p><label for="isobrenome">Sobrenome:</label> <!--o comando label é para linkar/relacionar o texto nome com a caixa onde será preenchido o nome, ou seja, o label com o input... para facilitar os mecanismos de busca, o navegador a saber qual caixa esta relacionada com qual label -->
+        <input type="text" name="sobrenome" id="isobrenome"></p>
+
+    <p><label for="isenha">Senha:</label> 
+        <input type="password" name="senha" id="isenha"></p>
+
+    <input type="submit" value="Enviar">
+
+   </form>
+    
+</body>
+</html>
