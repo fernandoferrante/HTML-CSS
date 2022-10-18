@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="icor">Cor: </label>
+            <input type="color" name="cor" id="icor" value="#0000ff">
+            <!--Por padrão inicia na cor preta.. se quiser que inicie numa determinada cor, insira o comando value:# + o numero da cor-->
+        </p>
+        <p>
+            <label for="inivel">Nível de satisfação:</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="10" value="8">
+            <!--por padrão o valor é de 0 a 100... se quiser mudar, ou dar um parametro diferente, deve inserir min: max:
+            --se quiser que inicie num determinado valor, insira, value: e o valr determinado-->
+        </p>
+
+        <p>
+            <label for="ifoto">Foto do perfil</label>
+            <input type="file" name="foto" id="ifoto">
+            <!--Para enviar em um formulario um arquivo tipo foto, o comando form deve estar no modo post-->
+        </p>
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
