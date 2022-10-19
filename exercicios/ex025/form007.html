@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                <!--Lista suspensa com uma seleção pre-determinada, nao dando a opção de inserir qqer outro valor a qal nao esteja na lista-->
+
+                <option value="" selected>-- escolha uma opção --</option>
+                <optgroup label="Região Sudeste">
+                    <!--a função otpgroup agrupa a lista - inserindo o comando label, consegue nomear esse agrupamento-->
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP"> São Paulo</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+
+                <!--se por algum motivo quizer que a lista inicie com algum valor ou determinada palavra da lista, deve inserir 'selected', confome utilizado no ex de SP-->
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="listprof">
+            <datalist id="listprof">
+                <option>Administrador</option>
+                <option>Contabilidade</option>
+                <option>Desenvolvedor</option>
+                <option>Professor</option>
+                <!--Essa opção de lista suspensa te da uma sugestão de valores cadastrados, prem suporta a opção de inserir qqer valor mesmo que nao esteja pre cadastrada na lista suspensa-->
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Menagem</label><br>
+            <textarea name="msg" id="imsg" cols="60" rows="5"></textarea>
+            <!--para formulario tipo textarea ideal que o formulario seja do metodo post-->
+
+        </p>
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
