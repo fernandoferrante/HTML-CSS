@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+/* esse modo de css faz com que todos os estilos (geral, retrato e paisagem) fiquem em um mesmo arquivo CSS, porem se o projeto começar a ficar muito grande, há uma dificuldade de administrar / gerenciar / modificar.
+
+com isso, a melhor sugestão seria em criar uma folha de estilo para cada tipo de orientação, onde será melhor para administrar e editar*/
+
+
 /* declrações gerais */
 @media all {
     * {
