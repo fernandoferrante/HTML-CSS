@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/* estilo para impressoras 
+- são criadas definições do que será exibido na impressão*/
+
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+menu {
+    display: none;
+} /* comando para não exibir o menu da pagina na tela de impressão*/
+
+article {
+    width: 100%;
+}
+
+article::after {
+    content: 'Esse artigo foi impresso do site www.cursoemvideo.com';
+} /* comando para exibir uma nota depois do 'article' da pagina html*/
